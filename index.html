@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Yunus Emre Dursun — Computer Science PhD student at the University of Illinois Chicago.">
+  <title>Yunus Emre Dursun</title>
+  <link rel="stylesheet" href="styles.css?v=2">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <div class="page-shell">
+    <aside class="profile" aria-label="Profile">
+      <div class="photo-frame" id="photoFrame">
+        <img id="profilePhoto" src="assets/profile.jpg" alt="Portrait of Yunus Emre Dursun">
+        <div class="photo-fallback" aria-hidden="true">YED</div>
+      </div>
+      <h1>Yunus Emre Dursun</h1>
+      <p class="role">PhD Student · Computer Science</p>
+      <p class="affiliation">University of Illinois Chicago</p>
+      <nav class="profile-links" aria-label="Profile links">
+        <a href="mailto:yunuseded.3851@gmail.com">Email <span>↗</span></a>
+        <a href="https://scholar.google.com/citations?user=Hof7O5EAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar <span>↗</span></a>
+        <a href="https://github.com/Yed38" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+        <a href="https://www.linkedin.com/in/yunus-emre-dursun-a3a780bb/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
+      </nav>
+    </aside>
+
+    <main id="content">
+      <section class="intro section">
+        <div class="neural-motif" aria-hidden="true">
+          <svg viewBox="0 0 760 190" role="img">
+            <defs>
+              <linearGradient id="neuralFlow" x1="0" x2="1">
+                <stop offset="0" stop-color="#3c78c2"/><stop offset="1" stop-color="#8867c7"/>
+              </linearGradient>
+            </defs>
+            <g class="neural-lines">
+              <path d="M46 52 C155 52 170 32 276 32 S424 70 518 52 S650 26 718 42"/>
+              <path d="M46 96 C146 96 182 148 276 148 S414 100 518 105 S640 158 718 142"/>
+              <path d="M46 142 C142 142 186 84 276 87 S418 142 518 148 S632 88 718 92"/>
+              <path d="M46 52 L276 148 L518 52 L718 142 M46 142 L276 32 L518 148 L718 42"/>
+            </g>
+            <g class="neural-nodes">
+              <circle cx="46" cy="52" r="8"/><circle cx="46" cy="96" r="8"/><circle cx="46" cy="142" r="8"/>
+              <circle cx="276" cy="32" r="10"/><circle cx="276" cy="87" r="10"/><circle cx="276" cy="148" r="10"/>
+              <circle cx="518" cy="52" r="10"/><circle cx="518" cy="105" r="10"/><circle cx="518" cy="148" r="10"/>
+              <circle class="output-node" cx="718" cy="42" r="9"/><circle class="output-node" cx="718" cy="92" r="9"/><circle class="output-node" cx="718" cy="142" r="9"/>
+            </g>
+          </svg>
+          <p><span>input</span><span>representation</span><span>attention</span><span>context</span></p>
+        </div>
+        <p class="notice">I am a Computer Science PhD student at the University of Illinois Chicago, advised by <a href="https://www.cs.uic.edu/~liub/" target="_blank" rel="noreferrer">Prof. Bing Liu</a>.</p>
+        <p>My research focuses on machine reasoning, particularly mathematical and logical reasoning, neuro-symbolic learning, and generalization beyond the training distribution. I am interested in Transformer-based architectures and, more broadly, continual learning and reinforcement learning.</p>
+        <p>Before beginning my PhD, I worked on large-scale mobile network systems, data analysis, and 5G infrastructure. This engineering background continues to shape how I think about reliable and deployable intelligent systems.</p>
+        <div class="interest-block">
+          <h2>Research Interests</h2>
+          <ol class="interest-list">
+            <li><span>01</span><strong>Machine Reasoning</strong></li>
+            <li><span>02</span><strong>Mathematical & Logical Reasoning</strong></li>
+            <li><span>03</span><strong>Neuro-symbolic Learning</strong></li>
+            <li><span>04</span><strong>Length Generalization</strong></li>
+            <li><span>05</span><strong>Continual Learning</strong></li>
+            <li><span>06</span><strong>Reinforcement Learning</strong></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" id="research">
+        <h2>Selected Research</h2>
+        <article class="project">
+          <div class="project-copy">
+            <p class="project-status">Current work · manuscript under anonymous review</p>
+            <h3>Neuro-symbolic reasoning for length generalization</h3>
+            <p>Exploring how a Transformer can predict fixed, local actions while an external symbolic executor constructs the next reasoning state. The goal is to make learned reasoning procedures less dependent on input length.</p>
+            <ul>
+              <li>Reasoning tasks include arithmetic and symbolic sequence problems.</li>
+              <li>The model operates on bounded local context rather than the full state.</li>
+              <li>Technical details are intentionally limited while the review is active.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="project compact">
+          <div class="project-copy">
+            <p class="project-status">MSc research · Gazi University</p>
+            <h3>Cooperative spectrum sensing for IoT using smart contracts</h3>
+            <p>Research connecting cognitive radio, spectrum sensing, blockchain, IoT, and smart contracts; presented at the 3rd International Graduate Studies Congress in 2023.</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="section reasoning-demo" id="demo">
+        <div class="demo-heading">
+          <div>
+            <p class="project-status">Interactive explainer</p>
+            <h2>Inside an encoder–decoder Transformer</h2>
+          </div>
+          <button type="button" id="playTransformer" class="trace-button">Play the flow</button>
+        </div>
+
+        <div class="demo-card">
+          <p class="demo-lead">A Transformer moves information between tokens using learned attention weights. Step through a logical question to see the encoder connect the stated relations and the decoder produce an answer one token at a time.</p>
+
+          <div class="stage-nav" role="tablist" aria-label="Transformer stages">
+            <button class="stage-button active" data-stage="0"><span>01</span>Tokens</button>
+            <button class="stage-button" data-stage="1"><span>02</span>Multi-head attention</button>
+            <button class="stage-button" data-stage="2"><span>03</span>Memory</button>
+            <button class="stage-button" data-stage="3"><span>04</span>Decoder</button>
+            <button class="stage-button" data-stage="4"><span>05</span>Multi-head cross-attention</button>
+            <button class="stage-button" data-stage="5"><span>06</span>Prediction</button>
+          </div>
+
+          <div class="transformer-lab" id="transformerLab">
+            <svg class="connection-layer" id="connectionLayer" aria-hidden="true"></svg>
+            <div class="token-rail input-rail">
+              <p class="rail-label">Input · facts and question</p>
+              <div class="rail-tokens" id="inputTokens"></div>
+            </div>
+            <div class="architecture-row">
+              <div class="model-stack encoder-stack" id="encoderStack">
+                <p>Encoder</p>
+                <div class="stack-layer">Multi-head self-attention <small>parallel heads can capture different token relationships</small></div>
+                <div class="stack-layer">Feed-forward network <small>transforms each contextual representation</small></div>
+                <b>× N layers</b>
+              </div>
+              <div class="memory-bridge" id="memoryBridge"><span>Contextual memory</span><i>→</i><small>one vector per input token</small></div>
+              <div class="model-stack decoder-stack" id="decoderStack">
+                <p>Decoder</p>
+                <div class="stack-layer">Masked multi-head self-attention <small>each head reads only tokens already generated</small></div>
+                <div class="stack-layer cross-layer">Multi-head cross-attention <small>decoder heads query the encoder memory</small></div>
+                <div class="stack-layer">Feed-forward network <small>prepares the next-token representation</small></div>
+                <b>× N layers</b>
+              </div>
+            </div>
+            <div class="token-rail output-rail">
+              <p class="rail-label">Generated answer</p>
+              <div class="rail-tokens" id="outputTokens"></div>
+              <div class="prediction-panel" id="predictionPanel" aria-label="Illustrative next-token probabilities">
+                <span style="--prob:86%">Carol <i>86%</i></span>
+                <span style="--prob:9%">Bob <i>9%</i></span>
+                <span style="--prob:5%">Alice <i>5%</i></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="stage-explanation" aria-live="polite">
+            <div><span id="stageNumber">01</span><h3 id="stageTitle">Words become vectors</h3></div>
+            <p id="stageText"></p>
+          </div>
+          <p class="attention-disclaimer"><strong>How to read the lines:</strong> thicker, darker links represent larger illustrative attention weights. They explain the mechanism clearly; they are not measurements from a trained model.</p>
+        </div>
+      </section>
+
+      <section class="section" id="education">
+        <h2>Education</h2>
+        <div class="entry"><div class="entry-date">2025 — Present</div><div><h3>University of Illinois Chicago</h3><p>PhD in Computer Science</p><p class="muted">Advisor: Prof. Bing Liu</p></div></div>
+        <div class="entry"><div class="entry-date">2020 — 2023</div><div><h3>Gazi University</h3><p>MSc in Electrical and Electronics Engineering</p><p class="muted">GPA: 3.98 / 4.00</p></div></div>
+        <div class="entry"><div class="entry-date">2016 — 2020</div><div><h3>Konya Technical University</h3><p>BSc in Electrical and Electronics Engineering</p><p class="muted">GPA: 3.50 / 4.00</p></div></div>
+      </section>
+
+      <section class="section" id="experience">
+        <h2>Experience</h2>
+        <div class="entry"><div class="entry-date">2021 — 2025</div><div><h3>Electronic Engineer · Türk Telekom</h3><p>Mobile core network planning, 5G training, network performance analysis, and infrastructure security.</p></div></div>
+        <div class="entry"><div class="entry-date">2020 — 2021</div><div><h3>Network Support Engineer · Huawei Technologies</h3><p>Network traffic analysis, performance troubleshooting, infrastructure planning, and technical documentation.</p></div></div>
+        <div class="entry"><div class="entry-date">2018 — 2020</div><div><h3>Mentoring & Robotics</h3><p>Taught coding and robotics, and contributed to an award-winning autonomous vehicle project using Python, ROS, deep learning, and image processing.</p></div></div>
+      </section>
+
+      <footer><p>© <span id="year"></span> Yunus Emre Dursun</p><a href="#content">Back to top ↑</a></footer>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
