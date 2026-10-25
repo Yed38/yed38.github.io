@@ -29,18 +29,31 @@
     <main id="content">
       <section class="intro section">
         <p class="notice">I am a Computer Science PhD student at the University of Illinois Chicago, advised by <a href="https://www.cs.uic.edu/~liub/" target="_blank" rel="noreferrer">Prof. Bing Liu</a>.</p>
-        <p>My research focuses on machine learning for mathematical and logical reasoning, neuro-symbolic learning, and generalization beyond the training distribution. I am interested in Transformer-based architectures and, more broadly, continual learning and reinforcement learning.</p>
+        <p>My research focuses on machine learning for reasoning problems—including mathematical and logical tasks—neuro-symbolic learning, and generalization beyond the training distribution. I am interested in Transformer-based architectures and, more broadly, continual learning and reinforcement learning.</p>
         <p>Before beginning my PhD, I worked on large-scale mobile network systems, data analysis, and 5G infrastructure. This engineering background continues to shape how I think about reliable and deployable intelligent systems.</p>
         <div class="interest-block">
           <h2>Research Interests</h2>
-          <ol class="interest-list">
-            <li><span>01</span><strong>Machine Learning</strong></li>
-            <li><span>02</span><strong>Mathematical & Logical Reasoning</strong></li>
-            <li><span>03</span><strong>Neuro-symbolic Learning</strong></li>
-            <li><span>04</span><strong>Length Generalization</strong></li>
-            <li><span>05</span><strong>Continual Learning</strong></li>
-            <li><span>06</span><strong>Reinforcement Learning</strong></li>
-          </ol>
+          <p class="interest-intro">Select a direction to see the research question behind it and how it connects to my work.</p>
+          <div class="research-map">
+            <div class="map-network" role="tablist" aria-label="Research interests">
+              <svg class="map-lines" viewBox="0 0 700 390" aria-hidden="true">
+                <path d="M350 195 L133 74 M350 195 L567 74 M350 195 L105 300 M350 195 L350 335 M350 195 L595 300"/>
+              </svg>
+              <button class="interest-node node-center active" data-interest="ml" role="tab" aria-selected="true"><span>Foundation</span>Machine Learning</button>
+              <button class="interest-node node-nw" data-interest="reasoning" role="tab" aria-selected="false"><span>Inference</span>Reasoning Problems</button>
+              <button class="interest-node node-ne" data-interest="neurosymbolic" role="tab" aria-selected="false"><span>Structure</span>Neuro-symbolic Learning</button>
+              <button class="interest-node node-sw" data-interest="length" role="tab" aria-selected="false"><span>Generalization</span>Length Generalization</button>
+              <button class="interest-node node-s" data-interest="continual" role="tab" aria-selected="false"><span>Adaptation</span>Continual Learning</button>
+              <button class="interest-node node-se" data-interest="rl" role="tab" aria-selected="false"><span>Interaction</span>Reinforcement Learning</button>
+            </div>
+            <div class="interest-detail" id="interestDetail" role="tabpanel" aria-live="polite">
+              <p class="project-status" id="interestLabel">Foundation</p>
+              <h3 id="interestTitle">Machine Learning</h3>
+              <p id="interestQuestion"></p>
+              <div><span>My focus</span><p id="interestFocus"></p></div>
+              <div><span>Connection</span><p id="interestConnection"></p></div>
+            </div>
+          </div>
         </div>
       </section>
 
