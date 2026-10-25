@@ -10,7 +10,7 @@ const interestData = {
     label:'Foundation', title:'Machine Learning',
     question:'How can a system learn useful patterns and procedures from data rather than relying only on hand-written rules?',
     focus:'Reliable learned representations and algorithms that generalize beyond the examples seen during training.',
-    connection:'The common foundation for my work on reasoning, neuro-symbolic methods, continual learning, and reinforcement learning.'
+    connection:'The methodological foundation for my primary work on reasoning, neuro-symbolic learning, and generalization; other interests are listed separately.'
   },
   reasoning: {
     label:'Inference', title:'Reasoning Problems',
@@ -31,16 +31,16 @@ const interestData = {
     connection:'A central test of whether a reasoning model has learned a procedure rather than memorized familiar sizes.'
   },
   continual: {
-    label:'Adaptation', title:'Continual Learning',
+    label:'Broader interest', title:'Continual Learning',
     question:'How can a model acquire new knowledge over time without erasing what it learned before?',
-    focus:'Adaptation under changing data and tasks while limiting catastrophic forgetting.',
-    connection:'Extends reliable learning from a fixed training set to systems that evolve after deployment.'
+    focus:'An additional area I follow: adaptation under changing data and tasks while limiting catastrophic forgetting.',
+    connection:'A broader interest rather than a claim about my current primary research program.'
   },
   rl: {
-    label:'Interaction', title:'Reinforcement Learning',
+    label:'Broader interest', title:'Reinforcement Learning',
     question:'How can an agent learn a sequence of decisions from actions, feedback, and delayed outcomes?',
-    focus:'Decision-making strategies that improve through interaction rather than labeled examples alone.',
-    connection:'Offers a complementary view of multi-step reasoning as choosing useful actions over time.'
+    focus:'An additional area I follow: decision-making strategies that improve through interaction rather than labeled examples alone.',
+    connection:'A broader interest that complements—but is separate from—my current primary research.'
   }
 };
 

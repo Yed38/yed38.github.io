@@ -28,21 +28,19 @@ h3 { margin:0 0 .35rem; font-size:1.14rem; line-height:1.45; }
 .interest-block h2 { margin-bottom:.65rem; }
 .interest-intro { margin:0 0 1.5rem; color:var(--muted); font-size:15px; }
 .research-map { display:grid; grid-template-columns:minmax(0,1.35fr) minmax(230px,.65fr); gap:1rem; align-items:stretch; }
-.map-network { position:relative; min-height:390px; border:1px solid #d7e1ef; background:radial-gradient(circle at 50% 50%,rgba(49,95,159,.12),transparent 28%),linear-gradient(135deg,#f7faff,#fbf9ff); overflow:hidden; }
-.map-lines { position:absolute; inset:0; width:100%; height:100%; }
-.map-lines path { fill:none; stroke:#9cb1cc; stroke-width:1.2; stroke-dasharray:3 5; }
-.interest-node { position:absolute; width:164px; min-height:68px; appearance:none; border:1px solid #b9c8db; background:rgba(255,255,255,.96); padding:.65rem .7rem; color:var(--text); font:600 13px/1.3 var(--sans); cursor:pointer; box-shadow:0 6px 18px rgba(44,65,98,.05); transition:transform .2s,border-color .2s,box-shadow .2s,background .2s; }
+.map-network { min-height:390px; display:grid; gap:.75rem; border:1px solid #d7e1ef; background:linear-gradient(135deg,#f7faff,#fbf9ff); padding:1rem; }
+.interest-group { display:grid; grid-template-columns:105px 1fr; gap:.75rem; align-items:stretch; }
+.interest-group>p { margin:0; padding:.75rem .4rem; border-right:1px solid var(--line); color:var(--muted); font:600 10px/1.45 var(--sans); text-transform:uppercase; letter-spacing:.07em; }
+.interest-group>p span { display:block; margin-bottom:.25rem; color:#9aa4b2; font-size:9px; }
+.interest-group>div { display:grid; gap:.55rem; }
+.primary-group>div { grid-template-columns:repeat(3,1fr); }
+.broader-group>div { grid-template-columns:1fr 1fr; }
+.interest-node { width:100%; min-height:68px; appearance:none; border:1px solid #b9c8db; background:rgba(255,255,255,.96); padding:.65rem .7rem; color:var(--text); font:600 13px/1.3 var(--sans); cursor:pointer; box-shadow:0 6px 18px rgba(44,65,98,.05); transition:transform .2s,border-color .2s,box-shadow .2s,background .2s; }
 .interest-node span { display:block; margin-bottom:.25rem; color:var(--muted); font:9px var(--sans); text-transform:uppercase; letter-spacing:.08em; }
 .interest-node:hover { transform:translateY(-2px); border-color:var(--link); }
 .interest-node.active { border-color:var(--violet); background:linear-gradient(135deg,#eef5ff,#f3ecfb); box-shadow:0 8px 22px rgba(86,68,135,.14),0 0 0 2px rgba(118,85,184,.08); }
-.node-center { left:50%; top:50%; transform:translate(-50%,-50%); }
-.node-center:hover { transform:translate(-50%,calc(-50% - 2px)); }
-.node-nw { left:4%; top:7%; }
-.node-ne { right:4%; top:7%; }
-.node-sw { left:1%; bottom:6%; }
-.node-s { left:50%; bottom:1%; transform:translateX(-50%); }
-.node-s:hover { transform:translate(-50%,-2px); }
-.node-se { right:1%; bottom:6%; }
+.broader-group { margin-top:.25rem; padding-top:.75rem; border-top:1px dashed #bbc6d4; }
+.broader-group .interest-node { color:#4e5664; background:#fbfcfe; box-shadow:none; }
 .interest-detail { border:1px solid #d7e1ef; border-top:3px solid var(--violet); background:#fff; padding:1.25rem; animation:stage-in .25s ease-out; }
 .interest-detail h3 { margin-bottom:.75rem; font-size:1.25rem; }
 .interest-detail>p:not(.project-status) { margin:.2rem 0 1.25rem; }
@@ -144,6 +142,7 @@ footer { display:flex; justify-content:space-between; padding:0 0 42px; color:va
   .stage-explanation { grid-template-columns:1fr; gap:.4rem; }
   .research-map { grid-template-columns:1fr; }
   .interest-detail { min-height:230px; }
+  .primary-group>div { grid-template-columns:1fr; }
   .qkv-grid,.head-grid { grid-template-columns:1fr; }
   .mix-flow,.ffn-flow { grid-template-columns:1fr; }
   .flow-arrow { transform:rotate(90deg); text-align:center; }
@@ -155,10 +154,13 @@ footer { display:flex; justify-content:space-between; padding:0 0 42px; color:va
   .profile { display:block; }
   .photo-frame { width:145px; }
   .profile-links { width:100%; }
-  .map-network { min-height:auto; display:grid; grid-template-columns:1fr 1fr; gap:.55rem; padding:.7rem; }
-  .map-lines { display:none; }
-  .interest-node,.node-center,.node-nw,.node-ne,.node-sw,.node-s,.node-se { position:static; width:auto; min-height:76px; transform:none; }
-  .interest-node:hover,.node-center:hover,.node-s:hover { transform:none; }
+  .map-network { min-height:auto; padding:.7rem; }
+  .interest-group { grid-template-columns:1fr; gap:.35rem; }
+  .interest-group>p { padding:.35rem 0; border-right:0; border-bottom:1px solid var(--line); }
+  .interest-group>p span { display:inline; margin-right:.4rem; }
+  .primary-group>div,.broader-group>div { grid-template-columns:1fr; }
+  .interest-node { min-height:70px; transform:none; }
+  .interest-node:hover { transform:none; }
   .entry,.education-entry { grid-template-columns:1fr; gap:.4rem; }
   .school-mark { margin:.4rem 0; }
   .section { padding-bottom:44px; margin-bottom:44px; }
