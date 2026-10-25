@@ -6,12 +6,6 @@ photo.addEventListener('load', () => frame.classList.add('has-photo'));
 photo.addEventListener('error', () => frame.classList.remove('has-photo'));
 
 const interestData = {
-  ml: {
-    label:'Foundation', title:'Machine Learning',
-    question:'How can a system learn useful patterns and procedures from data rather than relying only on hand-written rules?',
-    focus:'Reliable learned representations and algorithms that generalize beyond the examples seen during training.',
-    connection:'The methodological foundation for my primary work on reasoning, neuro-symbolic learning, and generalization; other interests are listed separately.'
-  },
   reasoning: {
     label:'Inference', title:'Reasoning Problems',
     question:'How can a model combine facts and intermediate steps to reach a valid conclusion?',
@@ -57,7 +51,7 @@ function renderInterest(key) {
   interestDetail.style.animation='none'; requestAnimationFrame(()=>{interestDetail.style.animation='';});
 }
 interestButtons.forEach(button=>button.addEventListener('click',()=>renderInterest(button.dataset.interest)));
-renderInterest('ml');
+renderInterest('reasoning');
 
 const stageCopy = [
   ['Split text into tokens','A tokenizer breaks text into reusable pieces. Transformers process token IDs—not raw words—and punctuation or parts of a word may become separate tokens.'],

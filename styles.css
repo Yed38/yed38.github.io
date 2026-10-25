@@ -36,7 +36,8 @@ h3 { margin:0 0 .35rem; font-size:1.14rem; line-height:1.45; }
 .primary-group>div { grid-template-columns:repeat(3,1fr); }
 .broader-group>div { grid-template-columns:1fr 1fr; }
 .interest-node { width:100%; min-height:68px; appearance:none; border:1px solid #b9c8db; background:rgba(255,255,255,.96); padding:.65rem .7rem; color:var(--text); font:600 13px/1.3 var(--sans); cursor:pointer; box-shadow:0 6px 18px rgba(44,65,98,.05); transition:transform .2s,border-color .2s,box-shadow .2s,background .2s; }
-.interest-node span { display:block; margin-bottom:.25rem; color:var(--muted); font:9px var(--sans); text-transform:uppercase; letter-spacing:.08em; }
+.interest-node span,.foundation-card span { display:block; margin-bottom:.25rem; color:var(--muted); font:9px var(--sans); text-transform:uppercase; letter-spacing:.08em; }
+.foundation-card { min-height:68px; display:grid; place-content:center; border:1px solid #a9b8cb; background:linear-gradient(135deg,#eef5ff,#f3ecfb); padding:.65rem .7rem; color:var(--text); text-align:center; font:600 13px/1.3 var(--sans); }
 .interest-node:hover { transform:translateY(-2px); border-color:var(--link); }
 .interest-node.active { border-color:var(--violet); background:linear-gradient(135deg,#eef5ff,#f3ecfb); box-shadow:0 8px 22px rgba(86,68,135,.14),0 0 0 2px rgba(118,85,184,.08); }
 .broader-group { margin-top:.25rem; padding-top:.75rem; border-top:1px dashed #bbc6d4; }
@@ -159,7 +160,7 @@ footer { display:flex; justify-content:space-between; padding:0 0 42px; color:va
   .interest-group>p { padding:.35rem 0; border-right:0; border-bottom:1px solid var(--line); }
   .interest-group>p span { display:inline; margin-right:.4rem; }
   .primary-group>div,.broader-group>div { grid-template-columns:1fr; }
-  .interest-node { min-height:70px; transform:none; }
+  .interest-node,.foundation-card { min-height:70px; transform:none; }
   .interest-node:hover { transform:none; }
   .entry,.education-entry { grid-template-columns:1fr; gap:.4rem; }
   .school-mark { margin:.4rem 0; }
